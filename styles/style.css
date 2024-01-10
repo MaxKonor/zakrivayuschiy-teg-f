@@ -23,6 +23,7 @@
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-variation-settings: var(--body-main-font-weight);
 }
 
 .header {
@@ -144,6 +145,7 @@
   font-size: 18px;
   line-height: normal;
   background: var(--bg-color);
+  font-variation-settings: var(--text-title-font-weight);
 }
 
 .card-image__container {
@@ -418,11 +420,11 @@
   font-size: 14px;
 }
 
-.button__icon {
+/* .button__icon {
   flex-shrink: 0;
   inline-size: 21px;
   block-size: 21px;
-}
+} */
 
 .modal__button {
   inline-size: 100%;

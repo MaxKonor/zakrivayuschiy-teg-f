@@ -3,8 +3,8 @@
 :root {
   --main-font: 'Inter';
   --accent-font: 'Press Start 2P';
-  --text-title-weight-dark: 700;
-  --body-text-weight-dark: 400;
+  --text-title-font-weight: 700;
+  --body-main-font-weight: 400;
   --bg-color: #FFF;
   --accent-color: #000;
   --stroke-text: #FFF;
