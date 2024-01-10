@@ -42,3 +42,69 @@
     opacity: 1;
   }
 }
+
+.heart .core {
+  fill: var(--bg-color);
+  transition: fill 0.3s linear 0.03s;
+}
+
+.heart .main-body {
+  fill: var(--bg-color);
+  transition: fill 0.3s linear;
+}
+
+.heart .contour {
+  fill: var(--contour-color-heart);
+  transition: fill 0.1s linear;
+}
+
+.heart {
+  transform-origin: center;
+}
+
+.like-icon .sparks {
+  opacity: 0;
+}
+
+.heart:hover .core {
+  fill: var(--contour-color-heart);
+  transition: fill 0.3s linear;
+}
+
+.heart:hover .main-body {
+  fill: var(--contour-color-heart);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.heart:active .core {
+  fill: var(--sparks-color);
+  transition: fill 0.3s linear;
+}
+
+.heart:active .main-body {
+  fill: var(--sparks-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--sparks-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--sparks-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--sparks-color);
+  transition: fill 0.3s linear 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  animation: heart-beat 0.3s ease-in 0.1s 1 alternate;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparkles-fly 0.3s ease-in 0.3s 1 alternate;
+}
