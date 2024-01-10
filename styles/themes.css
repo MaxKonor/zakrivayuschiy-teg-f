@@ -4,3 +4,46 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+  --text-title-weight-dark: 700;
+  --body-text-weight-dark: 400;
+  --bg-color: #FFF;
+  --accent-color: #000;
+  --stroke-text: #FFF;
+  --color-text-button: #FFF;
+  --contour-color-heart: #000;
+  --main-body-color: #FFF;
+  --bg-image: repeating-linear-gradient(to left, #d3d3d3 0 2px, #d3d3d300 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-text-weight-dark: 465;
+    --text-title-weight-dark: 785;
+    --bg-color: #000;
+    --accent-color: #00CC14;
+    --stroke-text: #000;
+    --color-text-button: #00CC14;
+    --contour-color-heart: #00CC14;
+    --main-body-color: #000;
+    --bg-image: repeating-linear-gradient(to left, #000000 0 2px, #00000000 2px 4px),
+      repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px),
+      linear-gradient(to bottom, #007f0c, #004306);
+  }
+}
+
+:root.theme-dark {
+  --body-text-weight-dark: 465;
+  --text-title-weight-dark: 785;
+  --bg-color: #000;
+  --accent-color: #00CC14;
+  --stroke-text: #000;
+  --color-text-button: #00CC14;
+  --contour-color-heart: #00CC14;
+  --main-body-color: #000;
+  --bg-image: repeating-linear-gradient(to left, #000000 0 2px, #00000000 2px 4px),
+    repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px),
+    linear-gradient(to bottom, #007f0c, #004306);
+}
