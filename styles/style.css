@@ -51,7 +51,7 @@
   text-transform: uppercase;
 }
 
-.header__title:focus{
+.header__title:focus {
   outline: none;
 }
 
@@ -313,7 +313,7 @@
   mix-blend-mode: difference;
 }
 
-.button__text-dialog{
+.button__text-dialog {
   text-transform: uppercase;
 }
 
@@ -389,7 +389,8 @@
   .card-image-text {
     inset-inline-end: 11px;
   }
-  .card-buttons{
+
+  .card-buttons {
     padding-inline: 25px;
     padding-block-end: 33px;
   }
